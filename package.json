@@ -1,0 +1,52 @@
+{
+  "name": "boolcalc",
+  "description": "Web application for parsing and evaluating boolean algebra expressions",
+  "homepage": "https://sheabunge.github.io/boolcalc",
+  "version": "1.0.0",
+  "author": "Shea Bunge <bungeshea@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheabunge/boolcalc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sheabunge/boolcalc/issues"
+  },
+  "main": "gulpfile.babel.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "precss": "^4.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.8.0",
+    "bootstrap": "^4.4.1"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "boolean",
+    "calculator"
+  ]
+}
