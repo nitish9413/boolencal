@@ -1,0 +1,148 @@
+
+$pale-yellow-bg: #fcf8e3;
+$pale-red-bg: #f2dede;
+$pale-green-bg: #dff0d8;
+$pale-blue-bg: #d9edf7;
+
+body {
+	background: #f1f1f1;
+	margin: 140px auto 25px;
+}
+
+main {
+	color: #444;
+	background: #fff;
+	padding: 5rem;
+	-webkit-font-smoothing: subpixel-antialiased;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+}
+
+label {
+	text-align: center;
+	width: 100%;
+}
+
+p {
+	font-size: 15px;
+}
+
+#exp {
+	height: 50px;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.btn-lg {
+	margin: 1.5em auto;
+}
+
+th, td {
+	text-align: center;
+}
+
+.truth-table th.variable, .truth-table th:last-of-type {
+	background-color: $pale-yellow-bg;
+}
+
+.instructions {
+	text-align: center;
+	margin-top: 1em;
+
+	p, table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p {
+		max-width: 800px;
+	}
+
+	table {
+		margin: 10px auto;
+		width: auto;
+	}
+
+	th:nth-child(3), td:nth-child(3),
+	th:nth-child(4), td:nth-child(4) {
+		text-align: left;
+	}
+
+	td:nth-child(2) code {
+		white-space: nowrap;
+	}
+
+}
+
+code, samp {
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+samp {
+	&.value-false, &.value-true {
+		font-size: 80%;
+		vertical-align: middle;
+	}
+}
+
+.value-true {
+	background-color: $pale-green-bg;
+
+	code&, samp& {
+		color: #3c763d;
+		border-color: #d6e9c6;
+	}
+}
+
+.value-false {
+	background-color: $pale-red-bg;
+
+	code&, samp& {
+		color: #a94442;
+		border-color: #ebccd1;
+	}
+}
+
+.parse-error {
+	text-align: center;
+	padding: 25px 20px 15px;
+}
+
+.parse-error + .truth-table {
+	margin-top: 2em;
+}
+
+form {
+	max-width: 350px;
+	margin: 0 auto 2em;
+}
+
+.header, .footer {
+	text-align: center;
+}
+
+.header {
+	padding-bottom: 1rem;
+}
+
+.footer {
+	padding-top: 1rem;
+	color: #777;
+	font-size: small;
+}
+
+a[ng-click] {
+	cursor: pointer;
+}
+
+.operations {
+	th:first-child, td:first-child {
+		white-space: nowrap;
+	}
+}
+
+var {
+	font-style: normal;
+	font-weight: bold;
+}
